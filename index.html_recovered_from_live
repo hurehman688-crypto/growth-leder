@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang=en class="__variable_1e35df __variable_efafc1 __variable_ba5569">
+<head>
+<meta charSet=utf-8 />
+<meta name=viewport content="width=device-width, initial-scale=1"/>
+<link rel=stylesheet href="_next/static/css/282d7a4ec2eea322.css" data-precedence=next />
+<link rel=stylesheet href="_next/static/css/c7e1f430b78fdc37.css" data-precedence=next />
+<link rel=stylesheet href="_next/static/css/107be5fca64d73a5.css" data-precedence=next />
+<style>
+    @keyframes shimmer-fast {
+      0% {
+        background-position: -200% 0;
+      }
+
+      100% {
+        background-position: 200% 0;
+      }
+    }
+
+    .brand-shimmer {
+      background: linear-gradient(90deg, #000 0%, #666 50%, #000 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: shimmer-fast 4s linear infinite;
+    }
+
+    .glow-hover:hover {
+      text-shadow: 0 0 15px rgba(34, 211, 238, 0.4);
+      filter: brightness(1.2);
+    }
+
+    .reveal-text {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+
+    .reveal-text.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Extracted from inline styles */
+    .js-progress-bar {
+      transform: scaleX(0) translateZ(0);
+    }
+
+    .js-img-placeholder {
+      color: transparent;
+    }
+
+    .js-parallax-up-100 {
+      transform: translateY(-100px) translateZ(0);
+    }
+
+    .js-parallax-down-150 {
+      transform: translateY(150px) translateZ(0);
+    }
+
+    .js-parallax-up-50 {
+      transform: translateY(-50px) translateZ(0);
+    }
+
+    .js-parallax-up-80 {
+      transform: translateY(-80px) translateZ(0);
+    }
+
+    .js-parallax-down-40 {
+      transform: translateY(40px) translateZ(0);
+    }
+
+    .js-fade-in {
+      opacity: 0;
+      transform: translateY(50px) translateZ(0);
+    }
+
+    .js-fade-in-card {
+      opacity: 0;
+      transform: translateY(20px) translateZ(0);
+    }
+
+    .js-fade-in-card2 {
+      opacity: 0;
+      transform: translateY(30px) translateZ(0);
+    }
+
+    .js-scroll-progress {
+      transform: scaleX(0) translateZ(0);
+    }
+
+    .js-stat-card {
+      opacity: 0;
+      transform: translateY(30px) translateZ(0);
+    }
+
+    .js-back-top {
+      opacity: 0;
+      transform: translateY(20px) translateZ(0);
+      pointer-events: none;
+    }
+
+    /* Additional extracted inline styles */
+    .js-fade-scale {
+      opacity: 0;
+      transform: scale(0.8) translateZ(0);
+    }
+
+    .js-parallax-down-80 {
+      transform: translateY(80px) translateZ(0);
+    }
+
+    .js-parallax-up-40 {
+      transform: translateY(-40px) translateZ(0);
+    }
+
+    .js-transform-none {
+      transform: none;
+    }
+
+    /* Overview section: no animations, typing, fade-in, or slide effects */
+    .overview-section,
+    .overview-section * {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .js-fade-only {
+      opacity: 0;
+    }
+
+    .js-fade-slide-x {
+      opacity: 0;
+      transform: translateX(50px) scale(0.95) translateZ(0);
+    }
+
+    .js-img-cover {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      color: transparent;
+    }
+
+    /* Testimonial card unique 3D tilt starters */
+    .js-tcard-1 {
+      opacity: 0;
+      transform: translateY(20px) rotateX(0deg) rotateY(5deg) translateZ(0);
+    }
+
+    .js-tcard-2 {
+      opacity: 0;
+      transform: translateY(20px) rotateX(2.576870748950764deg) rotateY(3.108049841353322deg) translateZ(0);
+    }
+
+    .js-tcard-3 {
+      opacity: 0;
+      transform: translateY(20px) rotateX(3.9417989199538406deg) rotateY(-1.1360104734654355deg) translateZ(0);
+    }
+
+    .js-tcard-4 {
+      opacity: 0;
+      transform: translateY(20px) rotateX(3.4528374665954957deg) rotateY(-4.520360710085306deg) translateZ(0);
+    }
+
+    .js-tcard-5 {
+      opacity: 0;
+      transform: translateY(20px) rotateX(1.3399526006236204deg) rotateY(-4.483792081670735deg) translateZ(0);
+    }
+
+    .js-tcard-6 {
+      opacity: 0;
+      transform: translateY(20px) rotateX(-1.4031329107584793deg) rotateY(-1.0539789971538984deg) translateZ(0);
+    }
+
+    .js-tcard-7 {
+      opacity: 0;
+      transform: translateY(20px) rotateX(-3.486303089654351deg) rotateY(3.1734643797131734deg) translateZ(0);
+    }
+
+    /* Hero Headline Animation */
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hero-h-animate {
+      animation: slideUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    /* Custom Cursor */
+    .custom-cursor {
+      width: 20px;
+      height: 20px;
+      background: rgba(34, 211, 238, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      position: fixed;
+      pointer-events: none;
+      z-index: 9999;
+      transition: transform 0.1s ease-out;
+      -webkit-backdrop-filter: blur(2px);
+      backdrop-filter: blur(2px);
+      box-shadow: 0 0 15px rgba(34, 211, 238, 0.5);
+      display: none;
+    }
+
+    @media (pointer: fine) {
+      .custom-cursor {
+        display: block;
+      }
+    }
+
+    /* Blinking cursor for typewriter */
+    .typewriter-cursor {
+      border-right: 3px solid #22d3ee;
+      animation: blink 0.7s infinite;
+      margin-left: 4px;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // 1. Mobile Menu Logic
+        const menuBtn = document.querySelector('button[aria-label="Toggle menu"]');
+        const mobileNav = document.querySelector('nav.fixed.top-0.right-0.h-full.w-80');
+        if (menuBtn && mobileNav) {
+            const closeBtn = mobileNav.querySelector('button');
+            const overlay = document.createElement('div');
+            overlay.className = 'fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] hidden';
+            document.body.appendChild(overlay);
+
+            const toggleMenu = () => {
+                const isClosed = mobileNav.classList.contains('translate-x-full');
+                mobileNav.classList.toggle('translate-x-full', !isClosed);
+                mobileNav.classList.toggle('translate-x-0', isClosed);
+                overlay.classList.toggle('hidden', !isClosed);
+                document.body.style.overflow = isClosed ? 'hidden' : '';
+            };
+
+            menuBtn.addEventListener('click', toggleMenu);
+            if (closeBtn) closeBtn.addEventListener('click', toggleMenu);
+            overlay.addEventListener('click', toggleMenu);
+            mobileNav.querySelectorAll('a').forEach(link => link.addEventListener('click', toggleMenu));
+        }
+
+        // 2. Reveal Animations & Counters
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    if (entry.target.classList.contains('js-counter')) animateCounter(entry.target);
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal-text, .js-counter').forEach(el => revealObserver.observe(el));
+
+        function animateCounter(el) {
+            const target = parseInt(el.getAttribute('data-target'));
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    el.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    el.textContent = Math.floor(current);
+                }
+            }, 30);
+        }
+
+        // 3. 3D Tilt Effect
+        document.querySelectorAll('.tilt-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width/2) / 10;
+                const y = (e.clientY - rect.top - rect.height/2) / -10;
+                card.style.transform = `perspective(1000px) rotateX(${y}deg) rotateY(${x}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+            });
+        });
+
+        // 4. Custom Cursor
+        const cursor = document.getElementById('cursor');
+        if (cursor) {
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.transform = `translate(${e.clientX - 10}px, ${e.clientY - 10}px)`;
+            });
+        }
+
+        // 5. Services Carousel
+        const track = document.getElementById('services-track');
+        if (track) {
+            const slides = document.querySelectorAll('.services-slide');
+            const dots = document.querySelectorAll('.carousel-dot');
+            const prevBtn = document.querySelector('.carousel-prev');
+            const nextBtn = document.querySelector('.carousel-next');
+            let currentIndex = 0;
+
+            const updateCarousel = (index) => {
+                currentIndex = (index + slides.length) % slides.length;
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                slides.forEach((s, i) => s.classList.toggle('active', i === currentIndex));
+                dots.forEach((d, i) => d.classList.toggle('active', i === currentIndex));
+            };
+
+            if (nextBtn) nextBtn.addEventListener('click', () => updateCarousel(currentIndex + 1));
+            if (prevBtn) prevBtn.addEventListener('click', () => updateCarousel(currentIndex - 1));
+            dots.forEach((dot, i) => dot.addEventListener('click', () => updateCarousel(i)));
+            setInterval(() => updateCarousel(currentIndex + 1), 5000);
+        }
+
+        // 6. Background Particles
+        const pContainer = document.getElementById("particles");
+        if (pContainer) {
+            for (let i = 0; i < 50; i++) {
+                const p = document.createElement("div");
+                p.className = "p";
+                p.style.width = p.style.height = (Math.random() * 3 + 1) + "px";
+                pContainer.appendChild(p);
+                animateP(p);
+            }
+        }
+        function animateP(p) {
+            const x = Math.random() * 100, y = Math.random() * 100;
+            p.style.left = x + "%"; p.style.top = y + "%";
+            setTimeout(() => {
+                p.style.transition = "15s linear";
+                p.style.opacity = Math.random() * 0.4;
+                p.style.left = (x + Math.random() * 20 - 10) + "%";
+                p.style.top = (y - 20) + "%";
+                setTimeout(() => animateP(p), 15000);
+            }, 100);
+        }
+
+        // 7. Sphere Mouse Easing
+        document.addEventListener("mousemove", (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            document.querySelectorAll(".sphere").forEach(s => s.style.transform = `translate(${x}px, ${y}px)`);
+        });
+
+        // 8. Newsletter Handler
+        window.handleNewsletterSubmit = (e) => {
+            e.preventDefault();
+            const msg = document.getElementById('newsletter-msg');
+            if (msg) msg.classList.remove('hidden');
+            e.target.reset();
+        };
+
+        // 9. Back to Top Logic
+        const backToTop = document.querySelector('button[aria-label="Back to top"]');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 500) {
+                    backToTop.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-5');
+                    backToTop.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                } else {
+                    backToTop.classList.add('opacity-0', 'pointer-events-none', 'translate-y-5');
+                    backToTop.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+    });
+  </script>
+</body>
+</html>

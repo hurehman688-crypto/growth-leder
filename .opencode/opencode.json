@@ -1,0 +1,10 @@
+{
+  "permission": {
+    "read": {
+      "/home/haseeb-ur-rehman/Desktop/Growth Leder/.opencode/get-shit-done/*": "allow"
+    },
+    "external_directory": {
+      "/home/haseeb-ur-rehman/Desktop/Growth Leder/.opencode/get-shit-done/*": "allow"
+    }
+  }
+}

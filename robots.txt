@@ -1,5 +1,21 @@
-User-Agent: *
+# Growth Leder robots.txt
+# Last Updated: 2026-04-05
+# https://growthleder.com
+
+User-agent: *
 Allow: /
+
+# Block sensitive & non-public paths
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /_build_artifacts/
+Disallow: /api/
+Disallow: /admin/
 Disallow: /private/
 
+# Crawl delay for polite crawling
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://growthleder.com/sitemap.xml
